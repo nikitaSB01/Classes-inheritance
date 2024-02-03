@@ -1,10 +1,10 @@
 export default class Character {
-  constructor(name, type, health, level, attack, defence) {
-    this.name = name;
-    this.type = type;
+  constructor() {
+    this.name;
+    this.type;
     this.health = 100;
     this.level = 1;
-    this.attack = attack;
-    this.defence = defence;
+    this.attack;
+    this.defence;
   }
 }
