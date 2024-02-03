@@ -11,6 +11,4 @@ const player = new Character("Niki", "Bowman");
 console.log(type_players);
 
 
-
-
-//?         npm i -D core-js@^3
+//?npm i -D core-js@^3
