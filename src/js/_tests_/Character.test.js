@@ -1,4 +1,5 @@
-import Character from "../Character";
+import Character from "../Character.js";
+
 const type_players = [
   "Bowman",
   "Swordsman",
@@ -8,6 +9,4 @@ const type_players = [
   "Zombie",
 ];
 const player = new Character("Niki", "Bowman");
-console.log(type_players, player);
-
-//?npm i -D core-js@^3
+console.log(player);
