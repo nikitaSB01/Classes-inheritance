@@ -1,5 +1,10 @@
-class Swordsman extends Character {
-    constructor() {
-      
-    }
+import Character from "./Character.js";
+export default class Swordsman extends Character {
+  constructor(name, type) {
+    super();
+    this.name = name;
+    this.type = type;
+    this.attack = 40;
+    this.defence = 10;
   }
+}
