@@ -8,7 +8,6 @@ const type_players = [
   "Zombie",
 ];
 const player = new Character("Niki", "Bowman");
-console.log(type_players);
-
+console.log(type_players, player);
 
 //?npm i -D core-js@^3
