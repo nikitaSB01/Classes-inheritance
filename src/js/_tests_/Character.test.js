@@ -1,12 +1,4 @@
 import Character from "../Character.js";
 
-/* const type_players = [
-  "Bowman",
-  "Swordsman",
-  "Magician",
-  "Daemon",
-  "Undead",
-  "Zombie",
-]; */
-const player = new Character("Niki");
+const player = new Character("Niki", "Daemon");
 console.log(player);
