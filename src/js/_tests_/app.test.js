@@ -140,3 +140,11 @@ test('Проверка нанесения урона', () => {
   };
   expect(received).toEqual(expected);
 });
+
+test('Умер или нет', () => {
+  expect(() => {
+    const received = new Zombie('Ron', 'Zombie');
+    received.health = -1;
+    received.damage(10);
+  }).toThrow();
+});

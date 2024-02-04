@@ -36,6 +36,8 @@ class Character {
   damage(points) {
     if (this.health >= 0) {
       this.health -= points * (1 - this.defence / 100);
+    } else {
+      throw new Error('Ваш персонаж мертв');
     }
   }
 }
