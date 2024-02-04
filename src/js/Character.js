@@ -8,7 +8,7 @@ const typePlayers = [
 ];
 class Character {
   constructor(name, type) {
-    if ((name.length < 2 || name.length > 10)) {
+    if (name.length < 2 || name.length > 10) {
       throw new Error('Ошибка. Допускаются только имена длиной от 2 символов и не более 10');
     }
     if (typePlayers.includes(type) === false) {
