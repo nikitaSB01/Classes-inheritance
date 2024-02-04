@@ -7,7 +7,6 @@ import Undead from '../Undead';
 import Zombie from '../Zombie';
 
 const player = new Character('Niki', 'Daemon');
-//  console.log(player);
 
 test('class Character', () => {
   expect(player).toEqual({
