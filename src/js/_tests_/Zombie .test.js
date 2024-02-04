@@ -1,4 +1,4 @@
-import Zombie from "../Zombie.js";
+import Zombie from '../Zombie';
 
-const player = new Zombie("Z", "Zombie");
+const player = new Zombie('Zo', 'Zombie');
 console.log(player);

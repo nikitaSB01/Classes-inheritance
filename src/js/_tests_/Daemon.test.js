@@ -1,4 +1,4 @@
-import Daemon from "../Daemon.js";
+import Daemon from '../Daemon';
 
-const player = new Daemon("D", "Daemon");
+const player = new Daemon('Da', 'Daemon');
 console.log(player);

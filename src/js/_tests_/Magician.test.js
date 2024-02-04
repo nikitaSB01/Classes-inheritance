@@ -1,4 +1,4 @@
-import Magician from "../Magician.js";
+import Magician from '../Magician';
 
-const player = new Magician("M", "Magician");
+const player = new Magician('Ma', 'Magician');
 console.log(player);

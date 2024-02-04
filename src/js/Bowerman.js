@@ -1,11 +1,12 @@
-import Character from "./Character.js";
+import Character from './Character';
 
-export default class Bowerman extends Character {
+class Bowerman extends Character {
   constructor(name, type) {
-    super();
-    this.name = name;
-    this.type = type;
+    super(name, type);
+    /* this.name = name;
+    this.type = type; */
     this.attack = 25;
     this.defence = 25;
   }
 }
+export default Bowerman;

@@ -1,27 +1,23 @@
-const type_players = [
-  "Bowman",
-  "Swordsman",
-  "Magician",
-  "Daemon",
-  "Undead",
-  "Zombie",
+const typePlayers = [
+  'Bowman',
+  'Swordsman',
+  'Magician',
+  'Daemon',
+  'Undead',
+  'Zombie',
 ];
-export default class Character {
-  constructor(name, type, attack, defence) {
-    if (typeof name === "string" && name.length >= 2 && name.length < 11) {
-      this.name = name;
-    } else {
-      throw new Error("Невалидное имя персонажа!");
+class Character {
+  constructor(name, type) {
+    if ((name.length < 2 || name.length > 10)) {
+      throw new Error('Ошибка. Допускаются только имена длиной от 2 символов и не более 10');
     }
-    if (type_players.includes(type)) {
-      this.type = type;
-    } else {
-      throw new Error("Неверное значение типа персонажа!");
+    if (typePlayers.includes(type) === false) {
+      throw new Error('Неверное значение типа персонажа!');
     }
-
+    this.name = name;
+    this.type = type;
     this.health = 100;
     this.level = 1;
-    this.attack = attack;
-    this.defence = defence;
   }
 }
+export default Character;

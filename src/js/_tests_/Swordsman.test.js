@@ -1,4 +1,4 @@
-import Swordsman from "../Swordsman.js";
+import Swordsman from '../Swordsman';
 
-const player = new Swordsman("S", "Swordsman");
+const player = new Swordsman('Sw', 'Swordsman');
 console.log(player);
