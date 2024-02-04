@@ -104,3 +104,39 @@ test('Верный ввод Zombie', () => {
   };
   expect(received).toEqual(expected);
 });
+
+test('Проверка повышения уровня', () => {
+  const received = new Zombie('Ron', 'Zombie');
+  received.levelUp();
+  const expected = {
+    name: 'Ron',
+    type: 'Zombie',
+    health: 100,
+    level: 2,
+    attack: 48,
+    defence: 12,
+  };
+  expect(received).toEqual(expected);
+});
+
+test('Умер или нет', () => {
+  expect(() => {
+    const received = new Zombie('Ron', 'Zombie');
+    received.health = 0;
+    received.levelUp();
+  }).toThrow();
+});
+
+test('Проверка нанесения урона', () => {
+  const received = new Zombie('Ron', 'Zombie');
+  received.damage(10);
+  const expected = {
+    name: 'Ron',
+    type: 'Zombie',
+    health: 91,
+    level: 1,
+    attack: 40,
+    defence: 10,
+  };
+  expect(received).toEqual(expected);
+});
